@@ -10,4 +10,4 @@ with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
     subject = 'Your daily weather update!'
     body = generate_weather_msg()
     msg = f'Subject: {subject}\n\n{body}'
-    smtp.sendmail(EMAIL_ADDRESS, 'put address of receiver here', msg)
+    smtp.sendmail(EMAIL_ADDRESS, EMAIL_ADDRESS, msg)
