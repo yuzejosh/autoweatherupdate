@@ -1,8 +1,8 @@
 import requests
 from secret import WEATHER_API_KEY
 
-city = 'Melbourne'
-username = "Josh"
+city = 'Put your city name here'
+username = "Put your name here"
 weather_forecast_url = f'http://api.weatherapi.com/v1/forecast.json?key={WEATHER_API_KEY}&q={city}'
 forecast = requests.get(weather_forecast_url).json()
 
